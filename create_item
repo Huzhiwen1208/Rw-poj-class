@@ -1,0 +1,17 @@
+#!/bin/bash
+
+file_name=$1
+cd items
+mkdir $file_name
+cd $file_name
+touch $file_name.go
+touch solution.md
+cat > $file_name.go  << EOF
+package main
+
+func main() {
+
+}
+EOF
+
+cd /Users/jackhu/src_code/go_src/learn/items/$file_name
